@@ -14,7 +14,7 @@
 
         public static Owner Create(string name, string address, DateTime birthday, string? photo = null)
         {
-\            if (string.IsNullOrWhiteSpace(name)) throw new ArgumentException("Name cannot be empty", nameof(name));
+            if (string.IsNullOrWhiteSpace(name)) throw new ArgumentException("Name cannot be empty", nameof(name));
             if (string.IsNullOrWhiteSpace(address)) throw new ArgumentException("Address cannot be empty", nameof(address));
             return new Owner { Name = name, Address = address, Birthday = birthday, Photo = photo };
         }
